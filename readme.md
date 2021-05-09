@@ -19,5 +19,3 @@ $ sh ./setup.sh
 ## ToDo
 
 * A list of ToDos.
-
-* Fix the failing test.

@@ -1,5 +1,14 @@
 import { React } from 'react';
 import { render, screen } from '@testing-library/react';
+
+jest.mock('./components/simpleButton'); // NOTE: automock from jest config doesn't work on apps created with create-react-app.
+jest.mock('./core/context', () => ({
+	state: {
+		count: 0,
+		refreshID: 'ABCD',
+	},
+}));
+
 import App from './App';
 
 test('renders learn react link', () => {
