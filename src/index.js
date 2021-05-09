@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
+import reportWebVitals from './reportWebVitals';
+import updateContext from '@laufire/resist';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import context from "./core/context";
+
+const Entry = () => {
+  const [state, setState] = useState(context.seed);
+  updateContext(context, { state, setState });
+
+  return App(context);
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Entry/>
   </React.StrictMode>,
   document.getElementById('root')
 );
