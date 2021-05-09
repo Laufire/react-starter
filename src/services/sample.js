@@ -1,5 +1,5 @@
 const sampleService = () => ({
-	sayHai: () => console.log('Hi!'),
+	sayHai: () => console.log('Hi!'), // eslint-disable-line no-console
 });
 
 const SampleService = sampleService();
