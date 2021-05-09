@@ -4,21 +4,20 @@ import reportWebVitals from './reportWebVitals';
 import updateContext from '@laufire/resist';
 import './index.css';
 import App from './App';
-import context from "./core/context";
+import context from './core/context';
 
 const Entry = () => {
-  const [state, setState] = useState(context.seed);
-  updateContext(context, { state, setState });
+	const [state, setState] = useState(context.seed);
 
-  return App(context);
-}
+	updateContext(context, { state, setState });
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Entry/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+	return App(context);
+};
+
+ReactDOM.render(<React.StrictMode>
+	<Entry/>
+</React.StrictMode>,
+document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
