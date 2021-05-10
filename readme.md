@@ -10,9 +10,11 @@
 
 * Some notes.
 
-# Development
+## Usage
 ## Setup
 ```sh
+$ git clone https://github.com/Laufire/react-starter.git my-project
+$ sh ./adopt.sh
 $ sh ./setup.sh
 ```
 
