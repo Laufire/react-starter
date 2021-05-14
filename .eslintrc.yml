@@ -258,5 +258,62 @@ rules:
   require-await: error
   prefer-promise-reject-errors: error
 
+  # React
+  react/function-component-definition:
+    - error
+    - namedComponents: arrow-function
+      unnamedComponents: arrow-function
+  react/destructuring-assignment: ["error", "always"]
+  react/no-danger: error
+  react/no-children-prop: error
+  react/no-deprecated: error
+  react/no-set-state: error
+  react/no-this-in-sfc: error
+  react/no-unescaped-entities: error
+  react/no-unknown-property: error
+  react/no-unstable-nested-components: error
+  react/prefer-stateless-function: error
+  react/react-in-jsx-scope: error
+  react/self-closing-comp: error
+  react/style-prop-object: error
+  react/void-dom-elements-no-children: error
+  ## JSX
+  react/jsx-boolean-value: ["error", "always"]
+  react/jsx-child-element-spacing: error
+  react/jsx-closing-bracket-location: ["error", "tag-aligned"]
+  react/jsx-curly-brace-presence: ["error", "never"]
+  react/jsx-curly-newline: ["error", "consistent"]
+  react/jsx-curly-spacing: ["error", "always"]
+  react/jsx-equals-spacing: ["error", "never"]
+  # react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }] #LATER: Reconsider this rule.
+  react/jsx-first-prop-new-line: ["error", "multiline-multiprop"]
+  react/jsx-fragments: "error"
+  react/jsx-indent: ["error", "tab"]
+  react/jsx-indent-props: ["error", "tab"]
+  react/jsx-key: ["error", { "checkFragmentShorthand": true }]
+  react/jsx-max-depth: ["error", { "max": 10 }] #LATER: Reconsider the value.
+  react/jsx-max-props-per-line: ["error", { "maximum": 1, "when": "multiline" }]
+  react/jsx-newline: ["error", { "prevent": true }]
+  react/jsx-no-comment-textnodes: error
+  react/jsx-no-constructed-context-values: error
+  react/jsx-no-duplicate-props: error
+  react/jsx-no-script-url: error
+  react/jsx-no-target-blank: error
+  react/jsx-no-undef: error
+  react/jsx-no-useless-fragment: error
+  # react/jsx-one-expression-per-line: error #LATER: Reconsider this rule.
+  react/jsx-pascal-case: error
+  react/jsx-sort-props: ["error", {
+    "noSortAlphabetically": true,
+    "reservedFirst": true
+  }]
+  react/jsx-tag-spacing: ["error", {
+    "closingSlash": "never",
+    "beforeSelfClosing": "never",
+    "afterOpening": "never",
+    "beforeClosing": "never"
+  }]
+  # react/jsx-wrap-multilines: error #LATER: Reconsider this rule.
+
   # Security
   # require-atomic-updates: error # Marked.
