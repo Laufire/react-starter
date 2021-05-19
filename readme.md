@@ -13,15 +13,17 @@
 ## Usage
 ## Setup - Linux / Mac
 ```sh
-$ git clone https://github.com/Laufire/react-starter.git my-project
+$ git clone https://github.com/Laufire/react-starter.git project-name
+$ cd project-name
 $ sh ./adopt.sh
 $ sh ./setup.sh
 ```
 
 ## Setup - Windows
 ```sh
-\> git clone https://github.com/Laufire/react-starter.git my-project
-\> .\adopt.bat
+C:\> git clone https://github.com/Laufire/react-starter.git project-name
+C:\> cd project-name
+C:\> .\adopt.bat
 ```
 
 ## ToDo
