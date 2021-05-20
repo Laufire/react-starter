@@ -1,5 +1,5 @@
-const increaseCount = ({ state }, increment) => ({
-	count: state.count + increment,
+const increaseCount = ({ state, data }) => ({
+	count: state.count + data,
 });
 
 const actions = {
