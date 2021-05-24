@@ -272,6 +272,7 @@ rules:
   react/no-unescaped-entities: error
   react/no-unknown-property: error
   react/no-unstable-nested-components: error
+  react/prop-types: ['error', {"skipUndeclared": true}]
   react/prefer-stateless-function: error
   react/react-in-jsx-scope: error
   react/self-closing-comp: error
