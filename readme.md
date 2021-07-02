@@ -26,6 +26,12 @@ C:\> cd project-name
 C:\> .\adopt.bat
 ```
 
+## Starting the App
+```sh
+$ pnpm i
+$ pnpm start
+```
+
 ## ToDo
 
 * Have branches to allow for multiple templates.
