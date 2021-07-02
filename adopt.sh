@@ -13,10 +13,10 @@ resetGitDir() {
 	git init
 }
 
-deleteAdoptScript() {
-	rm "$0"
+deleteAdoptScripts() {
+	rm ./adopt.*
 }
 
 # Main
 resetGitDir
-deleteAdoptScript
+deleteAdoptScripts

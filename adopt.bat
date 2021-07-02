@@ -1,9 +1,9 @@
-@echo on
+@echo off
 cd /d %~dp0%
 
 rd .\.git /s /q
 
 del .\adopt.sh
-del .\adopt.bat
+start /b cmd /c del "%~f0"&exit /b
 
-@echo off
+@echo on

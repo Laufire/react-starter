@@ -28,4 +28,6 @@ C:\> .\adopt.bat
 
 ## ToDo
 
-* A list of ToDos.
+* Have branches to allow for multiple templates.
+	* One for a clean one to start new projects.
+	* One with basic examples.
