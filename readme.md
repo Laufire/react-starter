@@ -37,3 +37,5 @@ $ pnpm start
 * Have branches to allow for multiple templates.
 	* One for a clean one to start new projects.
 	* One with basic examples.
+
+* Audit the packages. It's not done, yet. Due to poor understanding of the dependencies.
