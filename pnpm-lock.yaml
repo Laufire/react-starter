@@ -2,12 +2,12 @@ lockfileVersion: 5.3
 
 specifiers:
   '@laufire/resist': ^0.0.4
-  '@laufire/utils': ^2.5.5
-  '@testing-library/jest-dom': ^5.12.0
-  '@testing-library/react': ^11.2.6
+  '@laufire/utils': ^2.7.0
+  '@testing-library/jest-dom': ^5.14.1
+  '@testing-library/react': ^11.2.7
   '@testing-library/user-event': ^12.8.3
-  eslint: ^7.26.0
-  eslint-plugin-react: ^7.23.2
+  eslint: ^7.29.0
+  eslint-plugin-react: ^7.24.0
   react: ^17.0.2
   react-dom: ^17.0.2
   react-scripts: 4.0.3
@@ -70,7 +70,7 @@ packages:
       gensync: 1.0.0-beta.2
       json5: 2.2.0
       lodash: 4.17.21
-      resolve: 1.20.0
+      resolve: 1.18.1
       semver: 5.7.1
       source-map: 0.5.7
     transitivePeerDependencies:
@@ -6762,7 +6762,7 @@ packages:
       jest-pnp-resolver: 1.2.2_jest-resolve@26.6.0
       jest-util: 26.6.2
       read-pkg-up: 7.0.1
-      resolve: 1.20.0
+      resolve: 1.18.1
       slash: 3.0.0
     dev: false
 
@@ -9775,7 +9775,7 @@ packages:
       loader-utils: 2.0.0
       neo-async: 2.6.2
       schema-utils: 3.0.0
-      semver: 7.3.5
+      semver: 7.3.2
       webpack: 4.44.2
     dev: false
 

@@ -8,7 +8,7 @@
 
 ## Notes
 
-* Some notes.
+* Though pnpm is the preferred package manager, package-lock is still kept to widen support.
 
 ## Usage
 ## Setup - Linux / Mac
