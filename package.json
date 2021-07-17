@@ -43,5 +43,25 @@
   "devDependencies": {
     "eslint": "^7.29.0",
     "eslint-plugin-react": "^7.24.0"
-  }
+  },
+  "main": "index.js",
+  "license": "ISC",
+  "description": "Project description.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laufire/react-starter.git"
+  },
+  "author": "Laufire Technologies",
+  "bugs": {
+    "url": "https://github.com/Laufire/react-starter/issues"
+  },
+  "homepage": "https://laufire.github.io/react-starter",
+  "keywords": [
+    "simple",
+    "react",
+    "starter",
+    "boilerplate",
+    "template",
+    "resist"
+  ]
 }
