@@ -5,8 +5,15 @@
   "version": "0.2.0",
   "configurations": [
 		{
-      "type": "node",
+			"name": "Chrome",
+			"type": "chrome",
+			"request": "launch",
+			"url": "http://localhost:3000", // create-react-app's default port 3000
+			"webRoot": "${workspaceRoot}/src",
+		},
+		{
       "name": "jest-tests",
+      "type": "node",
       "request": "launch",
       "args": [
         "test",
