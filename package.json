@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test ",
     "eject": "react-scripts eject",
-    "test-dev": "react-scripts test a --watchAll=false",
+    "test-dev": "react-scripts test --watchAll=false",
     "test-ci": "npm run test-dev -- --coverage",
     "lint": "npx eslint"
   },
