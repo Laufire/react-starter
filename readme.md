@@ -39,3 +39,5 @@ $ pnpm start
 	* One with basic examples.
 
 * Audit the packages. It's not done, yet. Due to poor understanding of the dependencies.
+
+* Try moving away from create-react-app, as it introduces a lot of constraints, including reconfiguring jest.

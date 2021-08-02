@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test ",
     "eject": "react-scripts eject",
-    "test-once": "react-scripts test a --watchAll=false",
+    "test-dev": "react-scripts test a --watchAll=false",
+    "test-ci": "npm run test-dev -- --coverage",
     "lint": "npx eslint"
   },
   "eslintConfig": {
@@ -27,6 +28,19 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "./src/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   },
   "browserslist": {
     "production": [
