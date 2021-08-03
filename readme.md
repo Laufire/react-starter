@@ -11,7 +11,8 @@
 * Though pnpm is the preferred package manager, package-lock is still kept to widen support.
 
 ## Usage
-## Setup - Linux / Mac
+### Setup
+#### Linux / Mac
 ```sh
 $ git clone https://github.com/Laufire/react-starter.git project-name
 $ cd project-name
@@ -19,17 +20,24 @@ $ sh ./adopt.sh
 $ sh ./setup.sh
 ```
 
-## Setup - Windows
+#### Windows
 ```sh
 C:\> git clone https://github.com/Laufire/react-starter.git project-name
 C:\> cd project-name
 C:\> .\adopt.bat
 ```
 
-## Starting the App
-```sh
-$ pnpm i
-$ pnpm start
+### Development
+#### Linux, Windows & Mac
+```
+$ # Run all tests.
+$  pnpm run test-dev
+
+$ # Run a particular test (matching the given pattern).
+$ pnpm run test-dev -- --testPathPattern "target"
+
+$ # Run all tests with coverage.
+$  pnpm run test-ci
 ```
 
 ## ToDo
