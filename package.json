@@ -40,7 +40,8 @@
         "lines": 100,
         "statements": 100
       }
-    }
+    },
+    "restoreMocks": true
   },
   "browserslist": {
     "production": [
