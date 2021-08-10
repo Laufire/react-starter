@@ -4,21 +4,21 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-		{
-			"name": "Chrome",
-			"type": "chrome",
-			"request": "launch",
-			"url": "http://localhost:3000", // create-react-app's default port 3000
-			"webRoot": "${workspaceRoot}/src",
-		},
-		{
+    {
+      "name": "Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000", // create-react-app's default port 3000
+      "webRoot": "${workspaceRoot}/src",
+    },
+    {
       "name": "jest-tests",
       "type": "node",
       "request": "launch",
       "args": [
         "test",
         "--runInBand",
-				"--watchAll=false"
+        "--watchAll=false"
       ],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
