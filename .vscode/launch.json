@@ -12,13 +12,15 @@
       "webRoot": "${workspaceRoot}/src",
     },
     {
-      "name": "jest-tests",
+      "name": "jest",
       "type": "node",
       "request": "launch",
       "args": [
         "test",
         "--runInBand",
-        "--watchAll=false"
+        "--watchAll=false",
+        "--testPathPattern",
+        "${relativeFile}",
       ],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
