@@ -1,6 +1,3 @@
-const config = {
-	countStart: 0,
-	increment: 1,
-};
+const config = {};
 
 export default config;
