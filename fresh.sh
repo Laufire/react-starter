@@ -20,7 +20,6 @@ initializeCommit() {
 }
 
 deleteScripts() {
-	rm ./examples.sh
 	rm ./fresh.sh
 }
 
