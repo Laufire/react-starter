@@ -12,7 +12,6 @@ setupEnvironment() {
 	chmod 775 "$hooksPath"/*
 }
 
-#
 installPackages() {
 
 	pnpm i
