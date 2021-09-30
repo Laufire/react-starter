@@ -1,13 +1,11 @@
-jest.mock('./core/context', () => ({ config: { message: 'message' }}));
-
-import { React } from 'react';
 import { render, screen } from '@testing-library/react';
 
 import App from './App';
+import context from './core/context';
 
-test('renders learn react link', () => {
-	render(<App/>);
-	const someText = screen.getByText('message');
+test('component renders with welcome message', () => {
+	render(App(context));
+	const someText = screen.getByText(context.config.message);
 
 	expect(someText).toBeInTheDocument();
 });
