@@ -11,7 +11,7 @@ coverage
 ## General
 !.git*
 !.npmignore
-!.vscode
+!.vscode/launch.json
 
 ## Dev
 !.editorconfig
