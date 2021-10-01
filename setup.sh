@@ -12,7 +12,7 @@ installPackages() {
 }
 
 deleteScripts(){
-	rm fresh.sh
+	rm reset.sh
 }
 
 initializeCommit(){
