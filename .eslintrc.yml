@@ -318,3 +318,11 @@ rules:
 
   # Security
   # require-atomic-updates: error # Marked.
+overrides:
+  - files: ["*.test.js"]
+    rules:
+      max-depth: "off"
+      max-lines-per-function: "off"
+      max-nested-callbacks: "off"
+      max-statements: "off"
+
