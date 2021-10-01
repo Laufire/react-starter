@@ -1,19 +1,13 @@
 set -e
 cd "$(dirname "$0")"
 
-removeConflictFile() {
-	rm ./setup.sh
-	git add .
-	git commit -m "temp"
-}
-
 # Tasks
 mergeBranch() {
 	git fetch origin fresh
 	git checkout fresh
+	git merge master --strategy=ours --no-edit
 	git checkout master
-	removeConflictFile
-	git merge fresh || true
+	git merge fresh
 }
 
 executeScripts(){
@@ -26,12 +20,7 @@ initializeCommit() {
 	git commit -m "Initialized."
 }
 
-deleteScripts() {
-	rm -f ./reset.sh
-}
-
 # Main
 mergeBranch
 executeScripts
-deleteScripts
 initializeCommit
