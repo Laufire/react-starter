@@ -12,9 +12,11 @@ jest.mock('./core/context', () => ({
 
 import App from './App';
 
-test('renders learn react link', () => {
-	render(<App/>);
-	const someText = screen.getByText(/count/i);
+describe('App', () => {
+	test('the component renders properly', () => {
+		render(<App/>);
+		const someText = screen.getByText(/count/i);
 
-	expect(someText).toBeInTheDocument();
+		expect(someText).toBeInTheDocument();
+	});
 });
