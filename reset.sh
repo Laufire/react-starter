@@ -27,7 +27,7 @@ initializeCommit() {
 }
 
 deleteScripts() {
-	rm ./reset.sh
+	rm -f ./reset.sh
 }
 
 # Main
