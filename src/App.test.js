@@ -1,13 +1,12 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 
 import App from './App';
 import context from './core/context';
 
 describe('App', () => {
-	test('renders with a welcome message', () => {
-		render(App(context));
-		const someText = screen.getByText(context.config.message);
+	test('renders the component appropriately', () => {
+		const component = render(App(context)).getByRole('App');
 
-		expect(someText).toBeInTheDocument();
+		expect(component).toBeInTheDocument();
 	});
 });
