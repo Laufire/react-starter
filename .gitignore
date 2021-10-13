@@ -11,9 +11,11 @@ coverage
 ## General
 !.git*
 !.npmignore
-!.vscode/launch.json
 
 ## Dev
 !.editorconfig
 !.eslint*
 dist
+!.vscode
+.vscode/*
+!.vscode/launch.json
