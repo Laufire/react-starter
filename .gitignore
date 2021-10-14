@@ -4,8 +4,8 @@
 *.tgz
 
 ## Stack
-node_modules
-coverage
+/node_modules
+/coverage
 
 # Excludes
 ## General
@@ -15,8 +15,8 @@ coverage
 ## Dev
 !.editorconfig
 !.eslint*
-dist
 !.vscode
 .vscode/*
 !.vscode/launch.json
+/dist
 /src/lib

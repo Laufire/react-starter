@@ -1,4 +1,4 @@
-dist
+/dist
 /src/index.js
-reportWebVitals.js
+/src/reportWebVitals.js
 /src/lib
