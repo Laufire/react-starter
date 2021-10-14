@@ -17,7 +17,7 @@
     "eject": "react-scripts eject",
     "test-dev": "react-scripts test --watchAll=false",
     "test-ci": "npm run test-dev -- --coverage",
-    "lint": "npx eslint"
+    "lint": "npx eslint ."
   },
   "eslintConfig": {
     "extends": [
