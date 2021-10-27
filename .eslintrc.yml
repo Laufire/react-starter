@@ -320,7 +320,7 @@ rules:
   # Security
   # require-atomic-updates: error # Marked.
 overrides:
-  - files: ["*.test.js", "test/**]
+  - files: ["*.test.js", "test/**"]
     rules:
       max-depth: "off"
       max-lines-per-function: "off"
