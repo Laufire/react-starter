@@ -19,12 +19,6 @@
     "test-ci": "npm run test-dev -- --coverage",
     "lint": "npx eslint ."
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "jest": {
     "collectCoverageFrom": [
       "./src/**/*.js"

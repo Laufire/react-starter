@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
 
+import App from './App';
+
 // NOTE: automock from jest config doesn't work on apps created with create-react-app.
 jest.mock('./components/simpleButton');
-
-import App from './App';
 
 describe('App', () => {
 	const context = {
@@ -14,7 +14,7 @@ describe('App', () => {
 	};
 
 	test('the component renders properly', () => {
-		const component = render(App(context)).getByRole('App');
+		const component = render(App(context)).getByRole('application');
 		const someText = screen.getByText(/count/i);
 
 		expect(component).toBeInTheDocument();

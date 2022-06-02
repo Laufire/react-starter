@@ -16,6 +16,8 @@ env:
   node: true
   jest: true
 extends:
+  - "react-app"
+  - "react-app/jest"
   - "eslint:recommended"
   - "plugin:react/recommended"
 rules:
