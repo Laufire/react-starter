@@ -55,7 +55,7 @@
     "@testing-library/user-event": "^12.8.3",
     "eslint": "^7.29.0",
     "eslint-plugin-react": "^7.24.0",
-    "node-sass": "^6.0.1"
+    "sass": "^1.54.5"
   },
   "main": "index.js",
   "license": "ISC",
