@@ -2,12 +2,9 @@ set -e
 cd "$(dirname "$0")"
 
 # Tasks
-mergeBranch() {
-	git fetch origin fresh
-	git checkout fresh
-	git merge master --strategy=ours --no-edit
-	git checkout master
-	git merge fresh
+mergeOverrides() {
+	cp -r ./overrides/* .
+	rm -rf overrides
 }
 
 executeScripts(){
@@ -21,6 +18,6 @@ initializeCommit() {
 }
 
 # Main
-mergeBranch
+mergeOverrides
 executeScripts
 initializeCommit
