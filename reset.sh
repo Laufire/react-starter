@@ -2,22 +2,33 @@ set -e
 cd "$(dirname "$0")"
 
 # Tasks
-mergeOverrides() {
-	cp -r ./overrides/* .
-	rm -rf overrides
+executeAdoptScript(){
+	sh ./adopt.sh
 }
 
-executeScripts(){
-	sh ./adopt.sh
+cleanUp(){
+	rm ./src/components/simpleButton.*
+	rm ./src/core/actions.test.js
+	rm ./adopt.*
+	rm reset.sh
+}
+
+initializeGitDir(){
+	git init
+}
+
+executeSetup(){
 	sh ./setup.sh
 }
 
-initializeCommit() {
+initializeCommit(){
 	git add .
 	git commit -m "Initialized."
 }
 
 # Main
-mergeOverrides
-executeScripts
+executeAdoptScript
+cleanUp
+initializeGitDir
+setupHooks
 initializeCommit

@@ -8,15 +8,15 @@ set -e
 cd "$(dirname "$0")"
 
 # Tasks
-resetGitDir() {
-	rm -rf ./.git
-	git init
+mergeOverrides(){
+	cp -r ./overrides/* .
+	rm -rf overrides
 }
 
-deleteAdoptScripts() {
-	rm ./adopt.*
+resetGitDir() {
+	rm -rf ./.git
 }
 
 # Main
+mergeOverrides
 resetGitDir
-deleteAdoptScripts

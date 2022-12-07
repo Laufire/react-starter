@@ -2,26 +2,17 @@
 set -e
 cd "$(dirname "$0")"
 
-executeScript(){
-	sh ./adopt.sh
-}
-
 # Tasks
 installPackages() {
 	pnpm i
 }
 
-deleteScripts(){
-	rm reset.sh
-}
-
-initializeCommit(){
-	git add .
-	git commit -m "Initialized."
+setupHooks(){
+	hooksPath="./.githooks"
+	git config core.hooksPath "$hooksPath"
+	chmod 775 "$hooksPath"/*
 }
 
 # Main
-executeScript
 installPackages
-deleteScripts
-initializeCommit
+setupHooks
