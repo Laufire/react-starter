@@ -30,5 +30,4 @@ initializeCommit(){
 executeAdoptScript
 cleanUp
 initializeGitDir
-setupHooks
 initializeCommit
