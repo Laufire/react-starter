@@ -14,10 +14,11 @@ describe('App', () => {
 	};
 
 	test('the component renders properly', () => {
-		const component = render(App(context)).getByRole('application');
+		const { container: { children }} = render(App(context));
+		const [rootElement] = children;
 		const someText = screen.getByText(/count/i);
 
-		expect(component).toBeInTheDocument();
+		expect(rootElement).toBeInTheDocument();
 		expect(someText).toBeInTheDocument();
 	});
 });
