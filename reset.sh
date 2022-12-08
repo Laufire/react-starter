@@ -17,7 +17,7 @@ initializeGitDir(){
 	git init
 }
 
-executeSetup(){
+executeSetupScript(){
 	sh ./setup.sh
 }
 
@@ -30,4 +30,5 @@ initializeCommit(){
 executeAdoptScript
 cleanUp
 initializeGitDir
+executeSetupScript
 initializeCommit
