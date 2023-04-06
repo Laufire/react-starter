@@ -2,15 +2,12 @@ root: true
 settings:
   react:
     version: detect
-parser: babel-eslint
 parserOptions:
   sourceType: module
   allowImportExportEverywhere: false
   ecmaVersion: 2015
   ecmaFeatures:
     globalReturn: false
-  babelOptions:
-    configFile: babel.config.js
 env:
   es6: true
   node: true
