@@ -33,7 +33,7 @@ rules:
       after: true
   array-bracket-newline:
     - error
-    - consistent
+    - multiline: true
   array-bracket-spacing:
     - error
     - never
@@ -218,7 +218,7 @@ rules:
     - below
   object-curly-newline:
     - error
-    - consistent: true
+    - multiline: true
   object-curly-spacing:
     - error
     - always
@@ -341,18 +341,24 @@ rules:
   no-shadow: error
   no-redeclare: error
   no-shadow-restricted-names: error
-  no-unused-vars: 'off'
-  no-use-before-define: error
+  no-unused-vars:
+    - error
+  no-use-before-define:
+    - error
+    - functions: true
+      classes: true
+      variables: true
   no-undef: error
   no-undef-init: error
   no-var: error
-  unused-imports/no-unused-imports: error
+  unused-imports/no-unused-imports:
+    - error
   unused-imports/no-unused-vars:
     - warn
     - vars: all
-      varsIgnorePattern: ^_
+      varsIgnorePattern: ^dummy
       args: after-used
-      argsIgnorePattern: ^_
+      argsIgnorePattern: ^dummy
   # require-unicode-regexp: error # Disabled due to san issue with babel. Refer: https://github.com/babel/babel/issues/8951
 
   # Comparisons
@@ -438,7 +444,8 @@ rules:
     - consistent
   react/jsx-curly-spacing:
     - error
-    - always
+    - when: always
+      children: true
   react/jsx-equals-spacing:
     - error
     - never
@@ -446,7 +453,6 @@ rules:
   react/jsx-first-prop-new-line:
     - error
     - multiline-multiprop
-  react/jsx-fragments: error
   react/jsx-indent:
     - error
     - tab
@@ -485,6 +491,8 @@ rules:
       beforeSelfClosing: never
       afterOpening: never
       beforeClosing: never
+  react-hooks/exhaustive-deps: off
+
   # react/jsx-wrap-multilines: error #LATER: Reconsider this rule.
 
   # Security

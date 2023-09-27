@@ -7,9 +7,7 @@ test('increaseCount, increases count with given data.', () => {
 	const count = rndBetween();
 	const data = rndBetween();
 	const context = {
-		state: {
-			count,
-		},
+		state: { count },
 		data: data,
 	};
 

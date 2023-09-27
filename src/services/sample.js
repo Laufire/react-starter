@@ -1,6 +1,6 @@
-const sampleService = () => ({
-	sayHi: () => console.log('Hi!'), // eslint-disable-line no-console
-});
+import { peek } from '@laufire/utils/debug';
+
+const sampleService = () => ({ sayHi: () => peek('Hi!') });
 
 const SampleService = sampleService();
 
